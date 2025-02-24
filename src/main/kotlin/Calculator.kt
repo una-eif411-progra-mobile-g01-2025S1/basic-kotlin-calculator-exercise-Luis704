@@ -45,23 +45,3 @@ class Calculator {
         return result;
     }
 }
-
-fun main() {
-    val calculator = Calculator()
-
-    println(calculator.add(5.0, 3.0)) // Returns 8.0
-    println(calculator.add(Double.MAX_VALUE, Double.MAX_VALUE)) // Returns Error: Addition result too large, -1.0
-
-    println(calculator.subtract(10.0, 4.0)) // Returns 6.0
-    println(calculator.subtract(Double.MAX_VALUE, -Double.MAX_VALUE)) // Returns Error: Subtraction result too large, -1.0
-
-    println(calculator.multiply(2.0, 3.0)) // Returns 6.0
-    println(calculator.multiply(4.0, 0.0)) // Returns Error: Multiplication by 0, -1.0
-    println(calculator.multiply(Double.MAX_VALUE, 2.0)) // Returns Error: Multiplication result too large, -1.0
-
-    println(calculator.divide(10.0, 2.0)) // Returns 5.0
-    println(calculator.divide(10.0, 0.0)) // Returns Error: Division by 0, -1.0
-    println(calculator.divide(0.0, 5.0)) // Returns 0.0
-    println(calculator.divide(Double.MAX_VALUE, 0.00001)) // Returns Error: Division result too large, -1.0
-
-}
